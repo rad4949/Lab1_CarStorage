@@ -35,7 +35,7 @@ namespace Lab1.Entity
                    DriverType = "All-wheel drive",
                    EngineCapacity = 3,
                    FuelType = "Gasoline",
-                   ModelYear = DataType.Date,
+                   ModelYear =2020,
                    PriceEquipment = 250000,
                },
                new Equipment
@@ -45,7 +45,7 @@ namespace Lab1.Entity
                    DriverType = "All-wheel drive",
                    EngineCapacity = 2,
                    FuelType = "Gasoline",
-                   ModelYear = DataType.Date,
+                   ModelYear = 2021,
                    PriceEquipment = 200000
                },
                new Equipment
@@ -55,7 +55,7 @@ namespace Lab1.Entity
                    DriverType = "Rear wheel drive",
                    EngineCapacity = 3,
                    FuelType = "Diesel",
-                   ModelYear = DataType.Date,
+                   ModelYear = 2019,
                    PriceEquipment = 210000,
                }
            );

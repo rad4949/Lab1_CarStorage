@@ -1,9 +1,10 @@
 ﻿using Lab1.Entity.Models;
+using Lab1.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Lab1.Entity
 {
-    public class DBContext : DbContext
+    public class DBContext : DbContext, IDBContext
     {
         public DbSet<Brand> Brands { get; set; } = null!;
         public DbSet<Model> Models { get; set; } = null!;

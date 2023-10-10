@@ -8,7 +8,7 @@ namespace Lab1.Entity.Models
         public string DriverType { get; set; }
         public float EngineCapacity { get; set; }
         public string FuelType { get; set; }
-        public DataType ModelYear { get; set; }
+        public int ModelYear { get; set; }
         public decimal PriceEquipment { get; set; }
         
         public int ModelId { get; set; }
