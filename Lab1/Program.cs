@@ -11,11 +11,14 @@ builder.Services.AddDbContext<DBContext>(options => options.UseSqlServer(connect
 
 builder.Services.AddScoped<IDBContext, DBContext>();
 
-builder.Services.AddTransient<IShowTableService, ShowCarService>();
+builder.Services.AddTransient<IGetCarsService, GetCarsService>();
+builder.Services.AddTransient<IAddCarService, AddCarService>();
 
 var app = builder.Build();
 
+
 app.UseMiddleware<CarsListMiddleware>();
+app.UseMiddleware<AddCarMiddleware>();
 
 app.Run(async (context) => await context.Response.WriteAsync("Hello IGOR"));
 
